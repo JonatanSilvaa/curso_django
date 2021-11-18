@@ -6,5 +6,7 @@ import receitas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('receitas.urls')),
+    path('receitas/', include('receitas.urls')),
+    path('produto/', include('produto.urls')),
+    path('sobre/', include('sobre.urls')),
 ]
